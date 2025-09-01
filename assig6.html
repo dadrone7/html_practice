@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="utf-8">
+<meta name="description" content="working with CSS variables specificity and inheritance">
+<title>CSS Variables Assignment</title>
+<style>
+  :root {
+  --main-background-color: cyan; /* Define a CSS variable for the main background color */
+  --text-color: blue; /* Define a CSS variable for text color */
+  --list-bullet-image: url('ballsmall.png'); /* Define a CSS variable for the list bullet image */
+  --link-color: blue;
+  --link-hover-background: yellow;
+  --visited-link-color: red;
+  --logo-image: url('ball.png')
+  }
+  
+  body {
+    background-color: var(--main-background-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    height: 120px;
+    background-image: url('ball.png'); /* Set the ball.png as the background image for h1 */
+    background-size: contain; /* Ensure the background image fits the h1 element */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: left center; /* Center the background image */
+    color: var(--text-color); /* Set text color to white or any color that contrasts the background */
+    line-height: 120px; /* Center the text vertically within h1 */
+    margin: 0; /* Remove margin to avoid spacing around h1 */
+  }
+  
+  .links li a {
+    text-decoration: none;
+    color: var(--link-color);
+  }
+  
+  ul.links li a:visited {
+    color: var(--visited-link-color);
+  }
+  
+  a:hover {
+    background-color: var(--link-hover-background);
+    color: var(--text-color);
+  }
+  
+  a.no-underline {
+    text-decoration: none; /* Removes the underline for links with the "no-underline" class */
+  }
+  
+  ul {
+    list-style-image: var(--list-bullet-image); /* Set ballsmall.png as the list item bullets */
+    padding-left: 40px; /* Add some left padding to the list to make room for bullets */
+  }
+  
+  h2 {
+    text-align: left;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: var(--text-color);
+    text-align: left;
+  }
+  /* Rest of your CSS styles */
+</style>
+<body>
+<h1>ABC Volleyball League</h1>
+<br>
+<br>
+<br>
+<h2>Created for fun and for learning volleyball</h2>
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="members.html">Our Members</a></li>
+    <li><a href="https://www.facebook.com">Facebook Page</a></li>
+  </ul>
+<p>This is our league page. Hope you enjoy what our <a href="members.html" class="no-underline">Members</a> have to offer!</p>
+</body>
+</html>

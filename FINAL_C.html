@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://hills.ccsf.edu/~rharri99/HTML_CSS_FINAL/FINAL_C.html">
+    <meta property="og:type" content="webpage">
+    <meta property="og:description" content="Contact_Webpage">
+    <meta property="og:title" content="">
+    <link rel="stylesheet" type="text/css" href="FINAL.css">
+    <link rel="icon" type="image/jpeg" href="https://stvinc.com/sites/default/files/2017-03/Academic%20Joint-Use%20Building%20City%20College%20of%20San%20Francisco_0.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+    <title>FINAL_C</title>
+    <style>
+        h1 {
+            color: rgb(26, 140, 206);
+            font-size: 30px;
+        }
+
+        #myForm { 
+            background-color:#eaeaea;
+            font-family: Arial, sans-serif;
+            width:500px;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center; 
+        }
+
+        label {
+            width: 120px; 
+            text-align: right; 
+            padding-right: 10px;
+            margin-top: 10px; 
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-form .form-group label {
+            display: flex;
+            min-width: 100px; /* Adjust as needed */
+            text-align: right;
+            margin-right: 10px;
+            align-items: center;
+        }
+        
+        .custom-form {
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 5px;
+            margin-top: 10px; /* Adjust the space between labels and input/textarea */
+        }
+
+        #mySubmit:hover {       
+            text-align: center;
+            padding-bottom: 10px;
+            background-color: #999999;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <header class="custom-header">Ronald Harris-CNIT 132</header>
+        <nav>
+            <a href="https://hills.ccsf.edu/~rharri99/cnit132/FINAL.html" class="button">Home</a><!-- (pointing to this page miniproject1.html ) you are building-->
+            <a href="https://hills.ccsf.edu/~rharri99/cnit132/FINAL_A.html" class="button">Assignments</a><!--(that will point to the assignments.html page - this link should open in the same tab/window of your miniproject1.html page)-->
+            <a href="https://hills.ccsf.edu/~rharri99/cnit132/FINAL_M.html" class="button">Meetup</a><!--(when you build your Meetup report,  the link goes here)-->
+            <a href="https://hills.ccsf.edu/~rharri99/cnit132/FINAL_C.html" class="button">Contact</a><!--(this page will be built later as part of your Final Project)-->          
+        </nav>
+      <main>
+        <h1>Contact Me</h1>
+    
+        <form method="post" id="myForm" class="custom-form" style="background-color: #2c4d71;" >
+            <div class="form-group">
+                <label for="myName">Name:&nbsp;</label>
+                <input type="text" name="myName" id="myName">
+            </div>
+            <div class="form-group">
+                <label for="myEmail"> E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail">
+            </div>
+            <div class="form-group">
+                <label for="myComments">Comments:</label>
+                <textarea name="myComments" id="myComments" rows="4" cols="20" style="width: 293px; height: 104px;"></textarea>
+            </div>
+        <br>
+            <div id="mySubmit">
+                <input type="submit" value="Submit">
+            </div>    
+        </form>       
+      </main>
+      <footer>&copy; DadToTheMax, LLC | Contact:&nbsp;<a href="mailto:rharri99@mail.ccsf.edu">rharri99@mail.ccsf.edu</a></footer>  
+  </div>
+</body>
+</html>
